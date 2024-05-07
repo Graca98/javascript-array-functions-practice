@@ -31,6 +31,9 @@ const characters = [
 
 //***MAP***
 //1. Get array of all names
+// characters.map((one) => {
+//     return console.log(one.name);
+// })
 //2. Get array of all heights
 //3. Get array of objects with just name and height properties
 //4. Get array of all first names
@@ -44,8 +47,22 @@ const characters = [
 //***FILTER***
 //1. Get characters with mass greater than 100
 //2. Get characters with height less than 200
+// const allHeight = characters.filter((one) => {
+//     return one.height < 200;
+// })
+// console.log(allHeight);
+
 //3. Get all male characters
+const allMales = characters.filter((one) => {
+    return one.gender === "male"
+})
+console.log(allMales);
+
 //4. Get all female characters
+const allFemales = characters.filter((one) => {
+    return one.gender === "female"
+})
+console.log(allFemales);
 
 //***SORT***
 //1. Sort by mass
