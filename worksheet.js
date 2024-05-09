@@ -35,7 +35,15 @@ const characters = [
 //     return console.log(one.name);
 // })
 //2. Get array of all heights
+const allHeights = characters.map((one) => one.height)
+console.log(allHeights);
+
 //3. Get array of objects with just name and height properties
+const nameAndHeights = characters.map((one) => {
+    return `${one.name} ${one.height}`
+})
+console.log(nameAndHeights);
+
 //4. Get array of all first names
 
 //***REDUCE***
@@ -44,7 +52,7 @@ const characters = [
 //3. Get total number of characters by eye color
 //4. Get total number of characters in all the character names
 
-//***FILTER***
+//***FILTER*** Done
 //1. Get characters with mass greater than 100
 //2. Get characters with height less than 200
 // const allHeight = characters.filter((one) => {
@@ -53,16 +61,16 @@ const characters = [
 // console.log(allHeight);
 
 //3. Get all male characters
-const allMales = characters.filter((one) => {
-    return one.gender === "male"
-})
-console.log(allMales);
+// const allMales = characters.filter((one) => {
+//     return one.gender === "male"
+// })
+// console.log(allMales);
 
-//4. Get all female characters
-const allFemales = characters.filter((one) => {
-    return one.gender === "female"
-})
-console.log(allFemales);
+// //4. Get all female characters
+// const allFemales = characters.filter((one) => {
+//     return one.gender === "female"
+// })
+// console.log(allFemales);
 
 //***SORT***
 //1. Sort by mass
